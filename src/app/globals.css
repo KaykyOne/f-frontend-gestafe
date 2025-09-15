@@ -1,11 +1,30 @@
 @import "tailwindcss";
 
+.faculty {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input:focus {
+  outline: none; /* tira a linha azul de foco */
+  box-shadow: none; /* remove sombras de foco do navegador */
+}
+
 :root {
   --background: #F0F0F0;
   --foreground: #1F1F1F;
   --textLight: #828282;
   --textDark: #A6A6A6;
   --primary: #82ACAA;
+  --dark-primary: #337D7A;
+
 }
 
 @theme inline {
@@ -14,6 +33,7 @@
   --color-textLight: var(--textLight);
   --color-textDark: var(--textDark);
   --color-primary: #82ACAA;
+  --color-dark-primary: #337D7A;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -28,5 +48,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
